@@ -1,0 +1,12 @@
+
+a.active{
+	background: red;
+}
+
+p {
+	font-size: 32px;
+}
+
+img:hover {
+	box-shadow: 10px 10px 0 0 red;
+}
