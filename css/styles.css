@@ -49,11 +49,9 @@ main.gallary figcaption{
 	top: 0;
 	text-align: center;
 }
-a.active{
-	background: black;
-	color: white;
-}
 
+
+/* images */
 img:hover {
 	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.9); ;
 }
@@ -72,6 +70,7 @@ img.gallaryimg {
 	margin: 2em 0 1em 0;
 }
 
+/* containers */
 .container {
 	display: grid;
 	grid-template-columns: 1fr 5fr 1fr;
@@ -85,6 +84,7 @@ img.gallaryimg {
 	row-gap: 30px;
 }
 
+/* navigation and footer */
 nav{
 	background-color: #ddd;
 	padding: 20px 0;
@@ -110,6 +110,11 @@ nav a:hover{
 
 nav a:focus {
 	border: 2px solid black;
+}
+
+nav a.active{
+	background: black;
+	color: white;
 }
 
 footer{
