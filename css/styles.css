@@ -1,12 +1,122 @@
-
-a.active{
-	background: red;
+.skip a{
+	color: white;
+	left: 0;
+	top: 0;
+	padding: 0;
+	z-index: 1;
+	position: relative;
 }
 
-p {
-	font-size: 32px;
+body {
+	background-color: rgb(38, 38, 38);
+}
+
+header {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+header h1 {
+	color: white;
+	font-size: 64px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+main.home {
+	grid-column: 2/3;
+	grid-row: 3/-2;
+	background-color: rgb(50, 31, 23);
+}
+main.gallary {
+	grid-column: 2/3;
+	grid-row: 3/-2;
+	background-color: rgb(50, 31, 23);
+}
+
+main p {
+	color: white;
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+main h1 {
+	color: white;
+	font-size: 36px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+main.gallary figcaption{
+	color: white;
+	top: 0;
+	text-align: center;
+}
+a.active{
+	background: black;
+	color: white;
 }
 
 img:hover {
-	box-shadow: 10px 10px 0 0 red;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.9); ;
+}
+
+img {
+	box-sizing: border-box;
+	border: 3px solid black;
+	padding: 0;
+	margin: 0 0 3em 0;
+	width: 100%;
+	text-align: center;
+	grid-column: 2/3;
+}
+
+img.gallaryimg {
+	margin: 2em 0 1em 0;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 4em 8em 300px auto 4em;
+	row-gap: 30px;
+}
+.gallarycontainer {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: 4em 8em auto 4em;
+	row-gap: 30px;
+}
+
+nav{
+	background-color: #ddd;
+	padding: 20px 0;
+	text-align: center;
+	grid-column: 1/-1;
+	grid-row: 1/2;
+}
+
+nav li{
+  	display:inline;
+  	padding-right:20px;
+}
+
+nav a{
+  	color: black;
+  	font-weight: bold;
+  	text-decoration: none;
+}
+
+nav a:hover{
+  	text-decoration: underline;
+}
+
+nav a:focus {
+	border: 2px solid black;
+}
+
+footer{
+  	background-color: black;
+  	color: white;
+  	grid-column: 1 / -1;
+  	grid-row: span 1 / -1;
+  	padding-top: 30px;
+  	text-align: center;
 }
