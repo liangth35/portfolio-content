@@ -44,7 +44,7 @@ main h1 {
 	font-size: 36px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-main.gallary figcaption{
+figcaption{
 	color: white;
 	top: 0;
 	text-align: center;
