@@ -1,14 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+title {
+	background-image: "image/background.png";
+}
 .skip a{
-	color: white;
+	color: black;
 	left: 0;
 	top: 0;
 	padding: 0;
 	z-index: 1;
 	position: relative;
-}
-
-body {
-	background-color: rgb(38, 38, 38);
 }
 
 header {
@@ -17,7 +18,7 @@ header {
 }
 
 header h1 {
-	color: white;
+	color: black;
 	font-size: 64px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
@@ -26,62 +27,76 @@ header h1 {
 main.home {
 	grid-column: 2/3;
 	grid-row: 3/-2;
-	background-color: rgb(50, 31, 23);
+	/*background-color: rgb(50, 31, 23);*/
 }
 main.gallary {
-	grid-column: 2/3;
-	grid-row: 3/-2;
-	background-color: rgb(50, 31, 23);
+	background-color: white;
 }
-
+/* font */
+a {
+	font-family: "Roboto Slab", serif;
+}
+i {
+	font-style: italic;
+}
 main p {
-	color: white;
+	color: black;
 	font-size: 24px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Roboto Slab", serif;
 }
 main h1 {
-	color: white;
+	color: black;
 	font-size: 36px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Roboto Slab", serif;
 }
+
+/* images */
 figcaption{
-	color: white;
+	color: black;
 	top: 0;
 	text-align: center;
 }
 
-
-/* images */
 img:hover {
 	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.9); ;
 }
 
 img {
 	box-sizing: border-box;
-	border: 3px solid black;
+	border:0;
+	/* border: 2px solid rgba(0, 0, 0, 0.5); */
 	padding: 0;
-	margin: 0 0 3em 0;
+	margin: 5px;
 	width: 100%;
 	text-align: center;
 	grid-column: 2/3;
 }
-
-img.gallaryimg {
-	margin: 2em 0 1em 0;
+figure{
+	text-align: center;
+}
+main.home {
+	/* background-color: rgb(38, 38, 38); */
+	background-image: url("../image/background.png");
 }
 
 /* containers */
 .container {
 	display: grid;
 	grid-template-columns: 1fr 5fr 1fr;
-	grid-template-rows: 4em 8em 300px auto 4em;
+	grid-template-rows: 4em auto auto auto 4em;
 	row-gap: 30px;
 }
 .gallarycontainer {
-	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
-	grid-template-rows: 4em 8em auto 4em;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	align-content: center;
+}
+.gallary {
+	display: flex;
+	flex-direction: column;
 	row-gap: 30px;
+	align-items: center;
 }
 
 /* navigation and footer */
