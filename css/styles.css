@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
 
-title {
-	background-image: "image/background.png";
-}
 .skip a{
 	position: absolute;
 	color: black;
 	background-color: white;
 	top: -25px;
 	z-index: 3;
-	-webkit-transition: top 1s ease-out;
 	transition: top 1s ease-out;
 }
 .skip a:focus {
