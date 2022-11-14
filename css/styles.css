@@ -56,6 +56,11 @@ main p {
 	color: black;
 	font-size: 20px;
 	font-family: "Roboto Slab", serif;
+	text-align: justify;
+	margin: 0 0 1em 0;
+}
+.developercontainer main p {
+	padding: 0.5em 1em;
 }
 main h1 {
 	color: black;
@@ -99,7 +104,7 @@ figure{
 /* containers */
 .homecontainer {
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-columns: 1fr 6fr 1fr;
 	grid-template-rows: auto auto auto auto 4em;
 	row-gap: 20px;
 }
@@ -111,13 +116,13 @@ figure{
 }
 .developercontainer {
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-columns: 1fr 6fr 1fr;
 	grid-template-rows: auto auto auto 4em;
 	row-gap: 20px;
 }
 .timelinecontainer {
 	display: grid;
-	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-columns: 1fr 6fr 1fr;
 	grid-template-rows: auto auto auto 4em;
 	row-gap: 20px;
 }
@@ -127,7 +132,6 @@ figure{
 	row-gap: 20px;
 	align-items: center;
 }
-
 
 /* navigation and footer */
 nav{
@@ -154,7 +158,6 @@ nav li{
 		padding:10px;
   	}
 }
-
 
 nav a{
   	color: black;
