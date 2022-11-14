@@ -35,13 +35,14 @@ main.gallary {
 /* font */
 a {
 	font-family: "Roboto Slab", serif;
+	font-size: 20px;
 }
 i {
 	font-style: italic;
 }
 main p {
 	color: black;
-	font-size: 24px;
+	font-size: 20px;
 	font-family: "Roboto Slab", serif;
 }
 main h1 {
@@ -49,7 +50,9 @@ main h1 {
 	font-size: 36px;
 	font-family: "Roboto Slab", serif;
 }
-
+#developer_background p{
+	color: white;
+}
 /* images */
 figcaption{
 	color: black;
@@ -66,7 +69,7 @@ img {
 	border:0;
 	/* border: 2px solid rgba(0, 0, 0, 0.5); */
 	padding: 0;
-	margin: 5px;
+	margin: 0;
 	width: 100%;
 	text-align: center;
 	grid-column: 2/3;
@@ -74,10 +77,12 @@ img {
 figure{
 	text-align: center;
 }
-main.home {
+#developer_background {
 	/* background-color: rgb(38, 38, 38); */
-	background-image: url("../image/background.png");
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../image/developer.png");
+	background-size: cover;
 }
+
 
 /* containers */
 .container {
@@ -99,6 +104,9 @@ main.home {
 	align-items: center;
 }
 
+
+
+
 /* navigation and footer */
 nav{
 	background-color: #ddd;
@@ -106,6 +114,8 @@ nav{
 	text-align: center;
 	grid-column: 1/-1;
 	grid-row: 1/2;
+	top:0;
+	position: sticky;
 }
 
 nav li{
@@ -139,4 +149,17 @@ footer{
   	grid-row: span 1 / -1;
   	padding-top: 30px;
   	text-align: center;
+}
+
+/* animation */
+@keyframes example {
+	from {left:30px;opacity: 0;}
+	to {left:0px;opacity: 1;}
+  }
+@media (prefers-reduced-motion: no-preference){
+	.timeline img{
+		position: relative;
+		animation-name: example;
+  		animation-duration: 2s;
+	}
 }
