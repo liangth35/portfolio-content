@@ -59,7 +59,8 @@ main p {
 	margin: 0 0 1em 0;
 }
 .developercontainer main p {
-	padding: 0.5em 1em;
+	padding: 0.5em;
+	margin: 1em;
 }
 main h1 {
 	color: black;
@@ -96,10 +97,13 @@ figure{
 }
 #developer_background {
 	/* background-color: rgb(38, 38, 38); */
-	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../image/developer.png");
+	background-image: url("../image/developer.png");
+	/* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) */
 	background-size: cover;
 }
-
+#developer_background p {
+	background-color: black;
+}
 /* containers */
 .homecontainer {
 	display: grid;
