@@ -4,12 +4,16 @@ title {
 	background-image: "image/background.png";
 }
 .skip a{
+	position: absolute;
 	color: black;
-	left: 0;
+	background-color: white;
+	top: -25px;
+	z-index: 3;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+}
+.skip a:focus {
 	top: 0;
-	padding: 0;
-	z-index: 1;
-	position: relative;
 }
 
 header {
@@ -19,18 +23,26 @@ header {
 
 header h1 {
 	color: black;
-	font-size: 64px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-family: "Roboto Slab", serif;
 	text-align: center;
 }
-
+aside.home {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
 main.home {
 	grid-column: 2/3;
-	grid-row: 3/-2;
+	grid-row: 4/-2;
 	/*background-color: rgb(50, 31, 23);*/
 }
-main.gallary {
-	background-color: white;
+.developercontainer main {
+	grid-column: 2/3;
+	grid-row: 3/-2;
+}
+.timelinecontainer main {
+	grid-column: 2/3;
+	grid-row: 3/-2;
 }
 /* font */
 a {
@@ -53,6 +65,7 @@ main h1 {
 #developer_background p{
 	color: white;
 }
+
 /* images */
 figcaption{
 	color: black;
@@ -61,7 +74,7 @@ figcaption{
 }
 
 img:hover {
-	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.9); ;
+	box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5); ;
 }
 
 img {
@@ -83,13 +96,12 @@ figure{
 	background-size: cover;
 }
 
-
 /* containers */
-.container {
+.homecontainer {
 	display: grid;
 	grid-template-columns: 1fr 5fr 1fr;
-	grid-template-rows: 4em auto auto auto 4em;
-	row-gap: 30px;
+	grid-template-rows: auto auto auto auto 4em;
+	row-gap: 20px;
 }
 .gallarycontainer {
 	display: flex;
@@ -97,31 +109,52 @@ figure{
 	row-gap: 10px;
 	align-content: center;
 }
+.developercontainer {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: auto auto auto 4em;
+	row-gap: 20px;
+}
+.timelinecontainer {
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-template-rows: auto auto auto 4em;
+	row-gap: 20px;
+}
 .gallary {
 	display: flex;
 	flex-direction: column;
-	row-gap: 30px;
+	row-gap: 20px;
 	align-items: center;
 }
-
-
 
 
 /* navigation and footer */
 nav{
 	background-color: #ddd;
-	padding: 20px 0;
-	text-align: center;
+	padding: 10px 0;
+	text-align: left;
 	grid-column: 1/-1;
 	grid-row: 1/2;
 	top:0;
 	position: sticky;
+	z-index: 2;
+}
+nav li{
+	display: block;
+	padding: 5px;
+  }
+@media screen and (min-width: 800px) {
+	nav {
+		text-align: center;
+		padding: 20px 0;
+	}
+	nav li{
+		display: inline;
+		padding:10px;
+  	}
 }
 
-nav li{
-  	display:inline;
-  	padding-right:20px;
-}
 
 nav a{
   	color: black;
