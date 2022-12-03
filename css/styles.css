@@ -137,7 +137,7 @@ figure{
 /* containers */
 .homecontainer, .gallarycontainer, .developercontainer, .timelinecontainer{
 	display: grid;
-	grid-template-columns: 1fr 6fr 1fr;
+	grid-template-columns: 1em auto 1em;
 	grid-template-rows: auto auto auto auto 4em;
 	row-gap: 20px;
 	column-gap: 10px;
@@ -151,6 +151,13 @@ figure{
 	grid-column: 2/3;
 	grid-row: 3/-2;
 }
+
+@media screen and (min-width: 768px) {
+	.homecontainer, .gallarycontainer, .developercontainer, .timelinecontainer{
+		grid-template-columns: 1fr 6fr 1fr;
+	}
+}
+
 
 /* navigation and footer */
 nav{
@@ -181,7 +188,7 @@ nav.revert{
 	text-align: right
 }
 @media screen and (min-width: 768px) {
-	nav {
+	nav, nav.revert {
 		text-align: center;
 		padding: 20px 0;
 	}

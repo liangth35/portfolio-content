@@ -1,26 +1,27 @@
-var contact = document.getElementById('contactUs')
-var form = document.querySelector('aside.home')
-var navbutton = document.querySelector('nav button')
-var navlist = document.querySelector('nav')
 var hidden = true
 var left = true
 
-contact.addEventListener(`click`, hide)
-navbutton.addEventListener(`click`, right)
+var contact = document.getElementById('contactUs')
+var homeform = document.getElementById('homeform')
+var navbutton = document.getElementById("b1")
+var navlist = document.querySelector('nav')
+navbutton.addEventListener('click', revert)
+contact.addEventListener('click', hide)
+
 
 function hide() {
     if (hidden) {
         hidden=false
         contact.innerHTML='Hide'
-        form.style.right='0'
+        homeform.style.right='0'
     }
     else {
         hidden=true
         contact.innerHTML='Contact us!'
-        form.style.right='-11em'
+        homeform.style.right='-11em'
     }
 }
-function right() {
+function revert() {
     if (left) {
         left=false
         navbutton.innerHTML='To the left'
