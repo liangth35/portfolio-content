@@ -48,7 +48,7 @@ aside.home {
 @media screen and (min-width: 768px) {
 	aside.home {
 		position: fixed;
-		min-height: 6.2em;
+		min-height: 4em;
 		min-width:10em;
 		top:15em;
 		right:-22em;
@@ -259,6 +259,15 @@ body.developercontainer{
 	#q1, #q2, #q3{
 		grid-column: 2/3;
 	}
+	#q1{
+		grid-row: 2/3;
+	}
+	#q2{
+		grid-row: 3/4;
+	}
+	#q3{
+		grid-row: 4/5;
+	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -331,7 +340,7 @@ body.developercontainer{
 
 	#mainsubgrid{
 		grid-template-columns: repeat(3,1fr);
-		grid-template-rows: repeat(5,auto);
+		grid-template-rows: repeat(6,auto);
 	}
 
 	#mainsubgrid figure.first{
@@ -353,6 +362,15 @@ body.developercontainer{
 
 	#q1, #q2, #q3{
 		grid-column: 1/4;
+	}
+	#q1{
+		grid-row: 4/5;
+	}
+	#q2{
+		grid-row: 5/6;
+	}
+	#q3{
+		grid-row: 6/7;
 	}
 }
 
