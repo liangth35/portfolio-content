@@ -23,16 +23,17 @@ header h1 {
 	font-family: "Roboto Slab", serif;
 	text-align: center;
 	text-shadow: 2px 2px black;
+	background-color: black;
 }
 
 main {
 	grid-column: 2/3;
-	grid-row: 3/-2;
+	grid-row: 3/4;
 }
 
 aside.home {
 	grid-column: 2/-2;
-	grid-row: 4/-2;
+	grid-row: 4/5;
 	justify-self: center;
 	font-size:16px;
 	font-family: "Roboto Slab", serif;
@@ -46,13 +47,11 @@ aside.home {
 }
 @media screen and (min-width: 768px) {
 	aside.home {
-		/* grid-column: 3/-1;
-		grid-row: 3/-2; */
 		position: fixed;
-		height: 6.2em;
-		width:10em;
+		min-height: 6.2em;
+		min-width:10em;
 		top:15em;
-		right:-15em;
+		right:-22em;
 		border: 2px solid black;
 		transition: right 1s;
 		z-index: 3;
@@ -374,6 +373,7 @@ nav li{
 	padding: 5px;
 }
 nav button{
+	color: black;
 	background-color: #ddd;
 	position: fixed;
 	height: 5em;
