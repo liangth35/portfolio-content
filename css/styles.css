@@ -19,7 +19,7 @@ header {
 
 header h1 {
 	color: white;
-	font-size: 36px;
+	font-size: 2em;
 	font-family: "Roboto Slab", serif;
 	text-align: center;
 	text-shadow: 2px 2px black;
@@ -35,7 +35,7 @@ aside.home {
 	grid-column: 2/-2;
 	grid-row: 4/5;
 	justify-self: center;
-	font-size:16px;
+	font-size:1em;
 	font-family: "Roboto Slab", serif;
 	color: white;
 	background-color: black;
@@ -67,7 +67,7 @@ aside.home {
 		background-color: black;
 		font-family: "Roboto Slab", serif;
 		font-weight: bold;
-		font-size:16px;
+		font-size:1em;
 	}
 }
 input, textarea {
@@ -78,7 +78,7 @@ input, textarea {
 /* font */
 a {
 	font-family: "Roboto Slab", serif;
-	font-size: 20px;
+	font-size: 1em;
 }
 i {
 	font-style: italic;
@@ -92,19 +92,13 @@ p, figure{
 	font-family: "Roboto Slab", serif;
 }
 p {
-	font-size: 20px;
+	font-size: 1em;
 	padding: 0.5em;
 }
 figcaption {
-	font-size: 16px;
+	font-size: 1em;
 	padding: 0.2em;
 }
-main h1 {
-	color: black;
-	font-size: 36px;
-	font-family: "Roboto Slab", serif;
-}
-
 
 /* images */
 figcaption{
@@ -161,6 +155,9 @@ body.developercontainer{
 
 
 @media screen and (min-width: 768px) {
+	p {
+		font-size: 1.2em;
+	}
 	body {
 		grid-template-columns: 1fr 8fr 1fr;
 	}
@@ -398,7 +395,7 @@ nav button{
 	width: 5em;
 	right: 0;
 	top: 2em;
-	font-size: 16px;
+	font-size: 1em;
 	font-family: "Roboto Slab", serif;
 	font-weight: bold;
 	border: none;
