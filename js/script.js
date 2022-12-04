@@ -22,7 +22,7 @@ function hide() {
     else {
         hidden=true
         contact.innerHTML='Contact us!'
-        homeform.style.right='-11em'
+        homeform.style.right='-15em'
     }
 }
 function revert() {
