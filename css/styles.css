@@ -54,6 +54,7 @@ aside.home {
 		background: white;
 		border: 2px solid black;
 		transition: right 1s;
+		z-index: 3;
 	}
 	main.home {
 		grid-row: 3/-2;
@@ -135,9 +136,9 @@ figure{
 }
 
 /* containers */
-.homecontainer, .gallarycontainer, .developercontainer, .timelinecontainer{
+body {
 	display: grid;
-	grid-template-columns: 1em auto 1em;
+	grid-template-columns: 1fr 14fr 1fr;
 	grid-template-rows: auto auto auto auto 4em;
 	row-gap: 20px;
 	column-gap: 10px;
@@ -153,8 +154,27 @@ figure{
 }
 
 @media screen and (min-width: 768px) {
-	.homecontainer, .gallarycontainer, .developercontainer, .timelinecontainer{
-		grid-template-columns: 1fr 6fr 1fr;
+	body {
+		grid-template-columns: 1fr 8fr 1fr;
+	}
+	.gallary img{
+		width: 600px;
+	}
+	.gallary figure:nth-child(even){
+		align-self: flex-start;
+	}
+	.gallary figure:nth-child(odd){
+		align-self: flex-end;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.gallary{
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+	.gallary img{
+		width: 480px;
+		height: 270px;
 	}
 }
 
@@ -236,7 +256,7 @@ footer{
 	to {left:0px;opacity: 1;}
   }
 @media (prefers-reduced-motion: no-preference){
-	.timeline img{
+	img{
 		position: relative;
 		animation-name: example;
   		animation-duration: 2s;

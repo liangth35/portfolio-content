@@ -2,11 +2,15 @@ var hidden = true
 var left = true
 
 var contact = document.getElementById('contactUs')
-var homeform = document.getElementById('homeform')
+var homeform = document.querySelector('aside.home')
 var navbutton = document.getElementById("b1")
 var navlist = document.querySelector('nav')
+
+
 navbutton.addEventListener('click', revert)
-contact.addEventListener('click', hide)
+try{contact.addEventListener('click', hide)}
+catch{}
+
 
 
 function hide() {
