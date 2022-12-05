@@ -6,11 +6,11 @@ var homeform = document.querySelector('aside.home')
 var navbutton = document.getElementById("b1")
 var navlist = document.querySelector('nav')
 
-
 navbutton.addEventListener('click', revert)
 try{contact.addEventListener('click', hide)}
 catch{}
-
+try{contact.addEventListener('focus', hide)}
+catch{}
 
 
 function hide() {
