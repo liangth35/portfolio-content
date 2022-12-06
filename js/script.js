@@ -5,13 +5,13 @@ var contact = document.getElementById('contactUs')
 var homeform = document.querySelector('aside.home')
 var navbutton = document.getElementById("b1")
 var navlist = document.querySelector('nav')
-var send = document.getElementById('sendbutton')
+// var send = document.getElementById('sendbutton')
 
 navbutton.addEventListener('click', revert)
 try{contact.addEventListener('click', hide)}
 catch{}
-try{send.addEventListener('focus', hide)}
-catch{}
+// try{send.addEventListener('focus', hide)}
+// catch{}
 
 
 function hide() {
