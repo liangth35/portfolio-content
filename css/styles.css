@@ -52,13 +52,13 @@ aside.home {
 		min-width:10em;
 		top:15em;
 		right:-22em;
-		border: 2px solid black;
 		transition: right 1s;
 		z-index: 3;
 	}
-	aside.home:hover {
+	aside.home:hover{
 		right: 0;
 	}
+	
 	#contactUs {
 		display: unset;
 		position: fixed;
